@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using WebPracticeApp.Models;
 
 namespace WebPracticeApp.Data
 {
@@ -9,5 +10,6 @@ namespace WebPracticeApp.Data
         : base(options)
     {
     }
+    public DbSet<WebPracticeApp.Models.DefaultClass> DefaultClass { get; set; }
   }
 }
